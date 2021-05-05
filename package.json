@@ -8,7 +8,7 @@
     "lint": "eslint ./",
     "lint-fix": "eslint ./ --fix",
     "format": "prettier --write \"**/*.{ts,md}\"",
-    "doc-generate": "typedoc --name RGAPI4JS --media assets --toc --pretty --excludeNotDocumented --out docs lib/index.ts"
+    "doc-generate": "typedoc --name RGAPI4JS --media assets --toc --pretty --excludeNotDocumented --out docs lib"
   },
   "lint-staged": {
     "*.ts": "eslint"
