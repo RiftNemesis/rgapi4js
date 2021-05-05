@@ -1,5 +1,0 @@
-{
-  "src": "lib/**/*.ts",
-  "dest": "docs",
-  "clean": true
-}

@@ -7,10 +7,11 @@
     "test": "mocha --config .mocharc.json --watch lib/test/**/*.test.ts",
     "lint": "eslint ./",
     "lint-fix": "eslint ./ --fix",
-    "format": "prettier --write \"**/*.{ts,md}\""
+    "format": "prettier --write \"**/*.{ts,md}\"",
+    "doc-generate": "typedoc --name RGAPI4JS --media assets --toc --pretty --excludeNotDocumented --out docs lib/index.ts"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.ts": "eslint"
   },
   "husky": {
     "hooks": {
@@ -35,7 +36,6 @@
     "axios-mock-adapter": "^1.19.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
-    "docma": "^3.2.2",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.2",
@@ -53,6 +53,7 @@
     "ts-interface-checker": "^1.0.0",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
+    "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   }
 }
