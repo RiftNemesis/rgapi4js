@@ -1,6 +1,6 @@
-import redis from "redis";
+//import redis from "redis";
 
-import lol from "@riot-api/lol";
+import Lol from "@riot-api/lol";
 import rateLimiter from "@riot-api/utilities/ratelimiter";
 
 import RedisInterface from "@interfaces/redis";
@@ -70,7 +70,7 @@ export default class RiotApi {
    * @param platform
    */
   lol(platform: platformEnum) {
-    return new lol(this.token, platform);
+    return new Lol(this.token, platform);
   }
 
   /**

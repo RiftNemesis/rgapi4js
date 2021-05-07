@@ -3,8 +3,6 @@ import chaiAsPromised from "chai-as-promised";
 import { it } from "mocha";
 import logger from "mocha-logger";
 
-import { createCheckers } from "ts-interface-checker";
-
 import rateLimiter from "@riot-api/utilities/ratelimiter";
 import paths from "@riot-api/utilities/constants/paths";
 
@@ -36,7 +34,6 @@ describe("Summoner-v4", () => {
         "puuid",
         "summonerLevel"
       );
-      ``;
     } catch (e) {
       logger.error(e.message);
       throw new Error(JSON.stringify(e));

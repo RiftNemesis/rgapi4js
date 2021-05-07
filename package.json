@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha --config .mocharc.json --watch lib/test/**/*.test.ts",
-    "lint": "eslint ./",
-    "lint-fix": "eslint ./ --fix",
+    "lint": "eslint lib/**/*.ts",
+    "lint-fix": "eslint lib/**/*.ts --fix",
     "format": "prettier --write \"**/*.{ts,md}\"",
     "doc-generate": "typedoc --name RGAPI4JS --media assets --toc --pretty --excludeNotDocumented --out docs lib"
   },

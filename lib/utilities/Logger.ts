@@ -1,6 +1,4 @@
 export default class Logger {
-  constructor() {}
-
   info() {}
 
   warn() {}

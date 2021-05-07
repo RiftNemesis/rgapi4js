@@ -1,10 +1,13 @@
 module.exports = {
     "env": {
         "node": true,
-        "es2021": true
+        "es2021": true,
+        mocha: true,
     },
     "extends": [
-        "standard"
+        "standard",
+        "plugin:prettier/recommended",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -13,8 +16,12 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-        "plugin:prettier/recommended"
+        "prettier"
     ],
     "rules": {
+        "no-unused-vars": ["off"],
+        "no-unused-expressions": ["off"],
+        "no-new": ["off"],
+        camelcase: ["off"]
     }
 };
