@@ -1,0 +1,16 @@
+{
+  "src": "./build/**/*.js",
+  "dest": "./docs",
+  "clean": true,
+  "app": {
+    "title": "RGAPI4JS"
+  },
+  "jsdoc": {
+    "recurse": true
+  },
+  "markdown": {
+    "smartypants": true,
+    "tasks": true,
+    "emoji": true
+  }
+}
