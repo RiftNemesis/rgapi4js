@@ -1,3 +1,6 @@
+/**
+ * Maps for league of legends
+ */
 const maps = [
   {
     mapId: 1,

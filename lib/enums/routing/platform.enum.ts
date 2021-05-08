@@ -1,3 +1,8 @@
+/**
+ * Traditionally used for League of Legends.
+ *
+ * @enum PlatformEnum
+ */
 enum PlatformEnum {
   BRAZIL = "br1",
   EUNE = "eun1",
@@ -11,4 +16,5 @@ enum PlatformEnum {
   RUSSIA = "ru",
   EUW = "euw1",
 }
+
 export default PlatformEnum;

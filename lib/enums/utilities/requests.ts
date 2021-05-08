@@ -1,3 +1,6 @@
+/**
+ * @enum requestTypes
+ */
 enum requestTypes {
   GET = "GET",
   DELETE = "DELETE",

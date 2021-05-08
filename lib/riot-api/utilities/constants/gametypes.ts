@@ -1,3 +1,6 @@
+/**
+ * Game types for league of legends
+ */
 const gameTypes = [
   {
     gametype: "CUSTOM_GAME",

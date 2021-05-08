@@ -6,6 +6,11 @@ export default class LolApi {
   private readonly apiKey: string;
   private readonly platform: platformEnum;
 
+  /**
+   * All apis for league of legends
+   * @param {string} apiKey
+   * @param {platformEnum} platform
+   */
   constructor(apiKey: string, platform: platformEnum) {
     this.apiKey = apiKey;
     this.platform = platform;

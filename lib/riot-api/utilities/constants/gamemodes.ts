@@ -1,3 +1,6 @@
+/**
+ * Game modes for league of legends
+ */
 const gameModes = [
   {
     gameMode: "CLASSIC",

@@ -8,7 +8,7 @@ const limiter = new RiotRateLimiter();
 /**
  * Rate limiter for Riot Games apis
  *
- * @param region {Pl                                                                          atform} Region to execute against
+ * @param region {Platform} Region to execute against
  * @param path {string} API endpoint
  * @param token {string} API token (found at https://developer.riotgames.com)
  * @param options {RateLimiterOptions} Optional additions such as adding additional headers

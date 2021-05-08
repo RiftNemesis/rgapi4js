@@ -1,3 +1,6 @@
+/**
+ * @enum RegionalRouting
+ */
 enum RegionalRouting {
   AMERICAS = "americas.api.riotgames.com",
   ASIA = "asia.api.riotgames.com",

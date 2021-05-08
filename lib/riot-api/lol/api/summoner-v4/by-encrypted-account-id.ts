@@ -7,11 +7,11 @@ import byEncryptedAccountInterface from "@interfaces/riot-api/lol/api/summoner-v
 import Paths from "@riot-api/utilities/constants/paths";
 
 /**
- * Fetch account information from encrypted summoner id
+ * Fetch account information by encrypted account id
  *
- * @param encryptedAccountId
- * @param platform
- * @param token
+ * @param {string} encryptedAccountId
+ * @param {PlatformEnum} platform
+ * @param {string} token
  */
 const byEncryptedAccountId: (
   encryptedAccountId: string,
@@ -24,7 +24,7 @@ const byEncryptedAccountId: (
 ) =>
   rateLimiter(
     platform,
-    `${Paths.riotApi.lol.api.summonerV4.byEncryptedAccountId}${encryptedAccountId}`,
+    `${Paths.riotApi.lol.api.summonerV4.byEncryptedAccountId(encryptedAccountId)}`,
     token
   );
 

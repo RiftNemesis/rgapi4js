@@ -1,3 +1,7 @@
+/**
+ * Languages used by riot
+ * not all will be used.
+ */
 const languages = [
   "en_US",
   "cs_CZ",

@@ -8,6 +8,7 @@ import Paths from "@riot-api/utilities/constants/paths";
 
 /**
  * Search by summoner name (automatically url encoded).
+ *
  * @param summonerName {string} The in game name of the summoner
  * @param platform {Platform}  The platform to execute the request against.
  * @param token {string} The api token (found at https://developer.riotgames.com/)

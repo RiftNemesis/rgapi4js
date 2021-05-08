@@ -1,4 +1,4 @@
-export default interface bySummonerNameInterface {
+export default interface byEncryptedSummonerIdInterface {
   accoundId: string;
   profileIconId: number;
   revisionDate: number;

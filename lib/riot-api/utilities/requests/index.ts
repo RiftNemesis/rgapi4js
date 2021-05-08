@@ -6,8 +6,14 @@ const instance = axios.create({
   timeout: 1000,
 });
 
-const req = async (method: requestTypes) => {
-  return instance.request({ method });
+/**
+ * Request handler
+ *
+ * @param {string} url
+ * @param {requestTypes} method
+ */
+const req = async (url: string, method: requestTypes) => {
+  return instance.request({ method, url });
 };
 
 export default req;
