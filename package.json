@@ -1,14 +1,18 @@
 {
-  "name": "aphelios.js",
+  "name": "rgapi4js",
   "version": "1.0.0",
   "main": "build/lib/index.js",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "scripts": {
-    "test": "mocha --config .mocharc.json --watch lib/test/**/*.test.ts",
+    "test": "mocha --config .mocharc.json lib/test/**/*.test.ts",
+    "test:watch": "mocha --config .mocharc.json --watch lib/test/**/*.test.ts",
+    "typescript:compile": "tsc -p .",
     "lint": "eslint lib/**/*.ts",
-    "lint-fix": "eslint lib/**/*.ts --fix",
+    "lint:fix": "eslint lib/**/*.ts --fix",
     "format": "prettier --write \"**/*.{ts,md}\"",
-    "doc-generate": "typedoc --name RGAPI4JS --media assets --toc --pretty --excludeNotDocumented --out docs lib"
+    "doc:generate": "yarn typescript:compile && docma -c docma.json --clean",
+    "doc:serve": "docma serve",
+    "readmetoc": "doctoc README.md --github"
   },
   "lint-staged": {
     "*.ts": "eslint"
@@ -36,6 +40,7 @@
     "axios-mock-adapter": "^1.19.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
+    "docma": "^3.2.2",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.2",
@@ -53,7 +58,6 @@
     "ts-interface-checker": "^1.0.0",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
-    "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   }
 }
