@@ -1,8 +1,8 @@
 {
   "src":[
     "./build/index.js",
-    "./src/*.js",
-    "./src/**/*.js",
+    "./build/*.js",
+    "./build/**/*.js",
     "./README.md"
   ],
   "dest":"./docs",
