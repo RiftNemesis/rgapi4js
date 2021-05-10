@@ -17,16 +17,16 @@
     "sanitize":false
   },
   "app":{
-    "title":"RGAPI4JS",
+    "title":"RGAPI4JS | A Typescript wrapper for Riot Games' apis.",
     "routing":"query",
     "entrance":"content:readme",
-    "base":"/RGAPI4JS",
+    "base":"/rgapi4js",
     "server": "github"
   },
   "template":{
     "options":{
       "title":{
-        "label":"RGAPI4JS",
+        "label":"rgapi4js",
         "href":"."
       },
       "sidebar":{
