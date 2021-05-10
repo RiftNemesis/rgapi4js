@@ -1,16 +1,71 @@
 {
-  "src": "./build/**/*.js",
-  "dest": "./docs",
-  "clean": true,
-  "app": {
-    "title": "RGAPI4JS"
+  "src":[
+    "./build/index.js",
+    "./src/*.js",
+    "./src/**/*.js",
+    "./README.md"
+  ],
+  "dest":"./docs",
+  "jsdoc":{
+    "hierarchy":true,
+    "sort":"kind",
+    "plugins":[
+      "plugins/markdown"
+    ]
   },
-  "jsdoc": {
-    "recurse": true
+  "markdown":{
+    "sanitize":false
   },
-  "markdown": {
-    "smartypants": true,
-    "tasks": true,
-    "emoji": true
+  "app":{
+    "title":"RGAPI4JS",
+    "routing":"query",
+    "entrance":"content:readme",
+    "base":"/RGAPI4JS",
+    "server": "github"
+  },
+  "template":{
+    "options":{
+      "title":{
+        "label":"RGAPI4JS",
+        "href":"."
+      },
+      "sidebar":{
+        "enabled":true,
+        "outline":"tree",
+        "collapsed":false,
+        "toolbar":true,
+        "itemsFolded":false,
+        "itemsOverflow":"crop",
+        "badges":true,
+        "search":true,
+        "animations":true
+      },
+      "symbols":{
+        "autoLink":true,
+        "params":"list",
+        "enums":"list",
+        "props":"list",
+        "meta":false
+      },
+      "navbar":{
+        "enabled":true,
+        "dark":true,
+        "animations":true,
+        "menu":[
+          {
+            "label":"Readme",
+            "href":"."
+          },
+          {
+            "label":"Documentation",
+            "href":"?api"
+          },
+          {
+            "label":"GitHub",
+            "href":"https://github.com/Hi-Ray/rgapi4js"
+          }
+        ]
+      }
+    }
   }
 }
