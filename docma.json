@@ -1,7 +1,5 @@
 {
   "src":[
-    "./build/index.js",
-    "./build/*.js",
     "./build/**/*.js",
     "./README.md"
   ],
