@@ -50,14 +50,14 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fightmegg/riot-rate-limiter@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.npmjs.org/@fightmegg/riot-rate-limiter/-/riot-rate-limiter-0.0.12.tgz"
-  integrity sha512-h68depnJb9jO0R71Y6yBQDPtRbpOWS30p6k2baZj2ltSvn0s2P1w0TB1KS2kD/SG804Y/prduZjk0GHpHrcLMg==
+"@fightmegg/riot-rate-limiter@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@fightmegg/riot-rate-limiter/-/riot-rate-limiter-0.0.14.tgz#599da957b4ddea296d888ab349f2c72828acf866"
+  integrity sha512-MqK1sa8nEZEKt/y0XFgM3rSBf9BQucP5A65hqdCeS2e/KHpEJcDE1948tbTVGQXzla1xTSulotSqIFwLQGymZg==
   dependencies:
     bottleneck "^2.19.5"
-    debug "^4.2.0"
-    ioredis "^4.17.3"
+    debug "^4.3.2"
+    ioredis "^4.27.6"
     node-fetch "^2.6.1"
     path-to-regexp "^6.2.0"
 
@@ -1095,10 +1095,17 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4.3.1, debug@^4.0.1, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1:
+debug@4.3.1, debug@^4.0.1, debug@^4.1.1, debug@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.1.tgz"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.2:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
 
@@ -2445,16 +2452,17 @@ invert-kv@^2.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
 
-ioredis@^4.17.3:
-  version "4.26.0"
-  resolved "https://registry.npmjs.org/ioredis/-/ioredis-4.26.0.tgz"
-  integrity sha512-nh39okWezWWZ35/RxXXzHksMFt4WCaev8SNO2kozRDeVdEAJj16EarqPP3JeHz8IEjEXN5CiVtbWMk62Z0eveQ==
+ioredis@^4.27.6:
+  version "4.28.2"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.2.tgz#493ccd5d869fd0ec86c96498192718171f6c9203"
+  integrity sha512-kQ+Iv7+c6HsDdPP2XUHaMv8DhnSeAeKEwMbaoqsXYbO+03dItXt7+5jGQDRyjdRUV2rFJbzg7P4Qt1iX2tqkOg==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
     denque "^1.1.0"
     lodash.defaults "^4.2.0"
     lodash.flatten "^4.4.0"
+    lodash.isarguments "^3.1.0"
     p-map "^2.1.0"
     redis-commands "1.7.0"
     redis-errors "^1.2.0"
@@ -3139,6 +3147,11 @@ lodash.flatten@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npmjs.org/lodash.flatten/-/lodash.flatten-4.4.0.tgz"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
+
+lodash.isarguments@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
