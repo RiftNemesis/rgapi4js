@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@fightmegg/riot-rate-limiter": "^0.0.12",
-    "@types/chai": "^4.2.18",
+    "@types/chai": "^4.2.22",
     "axios": "^0.21.1",
     "axios-rate-limit": "^1.3.0",
     "lodash": "^4.17.21",
